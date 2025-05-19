@@ -1,0 +1,313 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calm galaxy</title>
+</head>
+
+<style>
+    body{
+    background-color: #000;
+}
+ @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .intro {
+                font-size: 24px;
+                padding: 20px;
+            }
+
+            .intro.shrink {
+                height: 150px;
+            }
+
+            section {
+                font-size: 18px;
+                padding: 50px 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .contact-icons a {
+                margin: 0 10px;
+            }
+
+            div[style*="display: flex;"] {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            p {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro {
+                font-size: 20px;
+            }
+
+            section {
+                font-size: 16px;
+                padding: 30px 5px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            animation: slideInLeft 2s ease-out;
+            transition: height 0.5s ease;
+        }
+
+        .intro.shrink {
+            height: 200px;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .icon:hover {
+            fill: #0077b5;
+        }
+
+        .icon2:hover {
+            fill: #000000;
+        }
+
+        .icon3:hover {
+            fill: #78cbff;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            transition: color 0.3s, fill 0.3s;
+        }
+
+        section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease;
+            padding: 100px 20px;
+            text-align: center;
+            font-size: 24px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: -42vw -4vh 0px 0px #fff,25vw -41vh 0px 0px #fff,-20vw 49vh 0px 1px #fff,5vw 40vh 1px 1px #fff,29vw 19vh 1px 0px #fff,-44vw -13vh 0px 0px #fff,46vw 41vh 0px 1px #fff,-3vw -45vh 0px 1px #fff,47vw 35vh 1px 0px #fff,12vw -8vh 1px 0px #fff,-34vw 48vh 1px 1px #fff,32vw 26vh 1px 1px #fff,32vw -41vh 1px 1px #fff,0vw 37vh 1px 1px #fff,34vw -26vh 1px 0px #fff,-14vw -49vh 1px 0px #fff,-12vw 45vh 0px 1px #fff,-44vw -33vh 0px 1px #fff,-13vw 41vh 0px 0px #fff,-36vw -11vh 0px 1px #fff,-23vw -24vh 1px 0px #fff,-38vw -27vh 0px 1px #fff,16vw -19vh 0px 0px #fff,28vw 33vh 1px 0px #fff,-49vw -4vh 0px 0px #fff,16vw 32vh 0px 1px #fff,36vw -18vh 1px 0px #fff,-25vw -30vh 1px 0px #fff,-23vw 24vh 0px 1px #fff,-2vw -35vh 1px 1px #fff,-25vw 9vh 0px 0px #fff,-15vw -34vh 0px 0px #fff,-8vw -19vh 1px 0px #fff,-20vw -20vh 1px 1px #fff,42vw 50vh 0px 1px #fff,-32vw 10vh 1px 0px #fff,-23vw -17vh 0px 0px #fff,44vw 15vh 1px 0px #fff,-40vw 33vh 1px 1px #fff,-43vw 8vh 0px 0px #fff,-48vw -15vh 1px 1px #fff,-24vw 17vh 0px 0px #fff,-31vw 50vh 1px 0px #fff,36vw -38vh 0px 1px #fff,-7vw 48vh 0px 0px #fff,15vw -32vh 0px 0px #fff,29vw -41vh 0px 0px #fff,2vw 37vh 1px 0px #fff,7vw -40vh 1px 1px #fff,15vw 18vh 0px 0px #fff,25vw -13vh 1px 1px #fff,-46vw -12vh 1px 1px #fff,-18vw 22vh 0px 0px #fff,23vw -9vh 1px 0px #fff,50vw 12vh 0px 1px #fff,45vw 2vh 0px 0px #fff,14vw -48vh 1px 0px #fff,23vw 43vh 0px 1px #fff,-40vw 16vh 1px 1px #fff,20vw -31vh 0px 1px #fff,-17vw 44vh 1px 1px #fff,18vw -45vh 0px 0px #fff,33vw -6vh 0px 0px #fff,0vw 7vh 0px 1px #fff,-10vw -18vh 0px 1px #fff,-19vw 5vh 1px 0px #fff,1vw 42vh 0px 0px #fff,22vw 48vh 0px 1px #fff,39vw -8vh 1px 1px #fff,-6vw -42vh 1px 0px #fff,-47vw 34vh 0px 0px #fff,-46vw 19vh 0px 1px #fff,-12vw -32vh 0px 0px #fff,-45vw -38vh 0px 1px #fff,-28vw 18vh 1px 0px #fff,-38vw -46vh 1px 1px #fff,49vw -6vh 1px 1px #fff,-28vw 18vh 1px 1px #fff,10vw -24vh 0px 1px #fff,-5vw -11vh 1px 1px #fff,33vw -8vh 1px 0px #fff,-16vw 17vh 0px 0px #fff,18vw 27vh 0px 1px #fff,-8vw -10vh 1px 1px #fff;
+  
+  /* stars were too big with the layers above but left the code in case no one cares  -- as in, if noone's just that  one other loner who actually cares    */
+  
+  box-shadow: 24vw 9vh 1px 0px #fff,12vw -24vh 0px 1px #fff,-45vw -22vh 0px 0px #fff,-37vw -40vh 0px 1px #fff,29vw 19vh 0px 1px #fff,4vw -8vh 0px 1px #fff,-5vw 21vh 1px 1px #fff,-27vw 26vh 1px 1px #fff,-47vw -3vh 1px 1px #fff,-28vw -30vh 0px 1px #fff,-43vw -27vh 0px 1px #fff,4vw 22vh 1px 1px #fff,36vw 23vh 0px 0px #fff,-21vw 24vh 1px 1px #fff,-16vw 2vh 1px 0px #fff,-16vw -6vh 0px 0px #fff,5vw 26vh 0px 0px #fff,-34vw 41vh 0px 0px #fff,1vw 42vh 1px 1px #fff,11vw -13vh 1px 1px #fff,48vw -8vh 1px 0px #fff,22vw -15vh 0px 0px #fff,45vw 49vh 0px 0px #fff,43vw -27vh 1px 1px #fff,20vw -2vh 0px 0px #fff,8vw 22vh 0px 1px #fff,39vw 48vh 1px 1px #fff,-21vw -11vh 0px 1px #fff,-40vw 45vh 0px 1px #fff,11vw -30vh 1px 0px #fff,26vw 30vh 1px 0px #fff,45vw -29vh 0px 1px #fff,-2vw 18vh 0px 0px #fff,-29vw -45vh 1px 0px #fff,-7vw -27vh 1px 1px #fff,42vw 24vh 0px 0px #fff,45vw -48vh 1px 0px #fff,-36vw -18vh 0px 0px #fff,-44vw 13vh 0px 1px #fff,36vw 16vh 0px 1px #fff,40vw 24vh 0px 0px #fff,18vw 11vh 0px 0px #fff,-15vw -23vh 1px 0px #fff,-24vw 48vh 0px 1px #fff,27vw -45vh 1px 0px #fff,-2vw -24vh 0px 1px #fff,-15vw -28vh 0px 0px #fff,-43vw 13vh 1px 0px #fff,7vw 27vh 1px 0px #fff,47vw 5vh 0px 0px #fff,-45vw 15vh 1px 1px #fff,-5vw -28vh 0px 1px #fff,38vw 25vh 1px 1px #fff,-39vw -1vh 1px 0px #fff,5vw 0vh 1px 0px #fff,49vw 13vh 0px 0px #fff,48vw 10vh 0px 1px #fff,19vw -28vh 0px 0px #fff,4vw 7vh 0px 0px #fff,21vw 21vh 1px 1px #fff,-15vw -15vh 0px 1px #fff,-6vw -42vh 1px 0px #fff,-15vw 48vh 1px 1px #fff,-23vw 25vh 1px 1px #fff,-48vw 25vh 0px 1px #fff,-31vw -19vh 0px 1px #fff,4vw 37vh 1px 1px #fff,-43vw 28vh 0px 0px #fff,3vw -25vh 0px 1px #fff,-39vw 14vh 0px 1px #fff,-40vw 31vh 0px 1px #fff,35vw -36vh 1px 1px #fff,16vw 49vh 0px 0px #fff,6vw 39vh 0px 0px #fff,3vw -35vh 0px 1px #fff,-44vw -2vh 1px 0px #fff,-6vw 21vh 1px 0px #fff,48vw 9vh 1px 1px #fff,-43vw 30vh 1px 1px #fff,29vw -12vh 1px 1px #fff,-48vw 13vh 1px 0px #fff,-42vw 32vh 1px 1px #fff,34vw 15vh 1px 1px #fff,29vw -37vh 1px 1px #fff,28vw 2vh 0px 0px #fff;
+  animation: zoom 16s alternate infinite; 
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+</style>
+<body>
+    <div class="intro" id="intro">Merhaba, <br> Ben Yusuf AKSU</div>
+
+    <section id="about">
+        <h2>Hakkında</h2>
+        <div>
+
+            <img src="img/frinos.jpeg" alt="Yusuf Enes Aksu"
+                style="width: 300px; height: 300px; border-radius: 30%; margin-bottom: 20px;" />
+        </div>
+        <p>Karadeniz Teknik Üniversitesi Yazılım Mühendisliği 1. sınıf öğrencisiyim. Lise yıllarımdan beri yazılıma ilgi
+            duyuyorum ve aktif olarak çeşitli projeler üzerinde çalışıyorum. Kendimi sürekli geliştirmeye ve yeni
+            teknolojiler öğrenmeye hevesliyim.</p>
+    </section>
+    <section id="experience">
+        <h2>Tecrübeler</h2>
+          <div style="flex: 1;">
+            <p><strong>Logo Yazılım – Yaz Stajı</strong><br>Haziran 2022 – Eylül 2022<br></p>
+        </div>
+        <div style="display: flex;">
+              <div style="flex: 1;"> <img src="img/logo.svg" height="100px" width="100px" alt="">
+            </div>
+            <p style="margin-left: 5%;">Lise döneminde gönüllü
+                olarak yaz
+                stajı yaptım. Yazılım geliştirme süreçlerine dair temel bilgiler edindim.</p>
+        </div>
+          <div style="flex: 1;">
+            <p><strong>Logo Yazılım – Zorunlu Yaz Stajı</strong><br>Haziran 2023 – Eylül 2023<br>
+        </div>
+        <div style="display: flex;">
+              <div style="flex: 1;"> <img src="img/logo.svg" height="100px" width="100px" alt="">
+            </div>
+            <p style="margin-left: 5%;"> Zorunlu yaz stajımı da
+                Logo Yazılım'da tamamlayarak hem gerçek iş ortamını gördüm hem de yeni tecrübeler kazandım.</p>
+            </p>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projeler</h2>
+          <div style="flex: 1;">
+            <p><strong>Delta İHA – Yazılım Geliştirici</strong><br>Aralık 2021 – Nisan 2022<br></p>
+        </div>
+        <div style="display: flex;">
+              <div style="flex: 1;"> <img src="img/delta.png" height="100px" width="100px" alt="">
+            </div>
+            <p style="margin-left: 5%;"> İnsansız hava araçları
+                alanında bir projede yer aldım. Teknofest yarışmasına katıldık ancak başarılı olamadık.</p>
+        </div>
+          <div style="flex: 1;">
+            <p><strong>Spero Dynamics – Yazılım Geliştirici</strong><br>Ekim 2024 – Devam ediyor<br></p>
+        </div>
+        <div style="display: flex;">
+              <div style="flex: 1;"> <img src="img/ugv.png" height="100px" width="100px" alt="">
+            </div>
+            <p style="margin-left: 5%;"> Birçok proje geliştiren bir mühendislik topluluğu olan Spero Dynamics'e
+                katıldım. Teknofest’e hazırlık sürecindeyiz.</p>
+            </p>
+
+        </div>
+    </section>
+
+    <section id="interests">
+        <h2>İlgi Alanları</h2>
+        <p>Mobil uygulama geliştirme (Flutter & Dart) <br>
+            Web teknolojileri (HTML, CSS, JavaScript) <br>
+            Masaüstü uygulama geliştirme (C#) <br>
+    </section>
+    <section id="contact">
+        <h2>İletişim</h2>
+        <div style="font-size: 40px;">
+            <a href="mailto:aksu3797@gmail.com" target="_blank"
+                style="color: white; margin: 0 15px; transition: color 0.3s; text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24"
+                    class="icon3">
+                    <path
+                        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/yusuf-aksu1903" target="_blank"
+                style="color: white; margin: 0 15px; transition: color 0.3s; text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24"
+                    class="icon">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.026-3.061-1.865-3.061-1.867 0-2.153 1.459-2.153 2.967v5.698h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.561 2.838-1.561 3.033 0 3.593 1.996 3.593 4.59v5.604z" />
+                </svg>
+            </a>
+
+            <a href="https://github.com/yusufaksu5341" target="_blank"
+                style="color: white; margin: 0 15px; transition: color 0.3s; text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24"
+                    class="icon2">
+                    <path
+                        d="M12 .5c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.467-1.332-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.119 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.589 8.2-6.086 8.2-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+    </section>
+    </div>
+</body>
+<div class="main"></div>
+
+
+<script>
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min
+    }
+
+    const STAR_COUNT = 400
+    let result = ""
+    for (let i = 0; i < STAR_COUNT; i++) {
+        result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
+    }
+    console.log(result.substring(0, result.length - 1))
+        const sections = document.querySelectorAll("section");
+        const intro = document.getElementById("intro");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                intro.classList.add("shrink");
+            } else {
+                intro.classList.remove("shrink");
+            }
+        });
+</script>
